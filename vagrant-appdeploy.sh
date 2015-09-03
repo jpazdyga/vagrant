@@ -14,7 +14,6 @@ fetchip() {
 ansibledeploy() {
 
 	vgtfilechk=`tail -1 Vagrantfile`
-	echo $vgtfilechk
 	if [[ "$vgtfilechk" =~ ^end ]];
 	then
 		echo "Removing the last 'end' statement from Vagrantfile."
